@@ -10,6 +10,21 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.title_wrap {
+  color: #3c3c3c;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+}
+
+.title_wrap .title {
+  text-align: center;
+}
+
 .container {
   width: 100%;
   padding: 15px;

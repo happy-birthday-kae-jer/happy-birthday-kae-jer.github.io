@@ -1,4 +1,5 @@
 const flip_cards = document.querySelectorAll('.flip-card-inner');
+const image_cards = document.querySelectorAll('.flip-card-inner');
 
 flip_cards.forEach((el) => {
   const flip_card_back = el.querySelector('.flip-card-back');
@@ -14,3 +15,14 @@ flip_cards.forEach((el) => {
     }
   });
 });
+
+// image_cards.forEach((el) => {
+//   const pic = el.querySelector('.pic');
+//   el.addEventListener('click', () => {
+//     pic.style.height = '300px';
+//     pic.style.width = '300px';
+
+//     el.parentNode.style.height = pic.offsetHeight + 'px';
+//     el.parentNode.parentNode.style.width = `${300 + pic.offsetWidth}px`;
+//   });
+// });

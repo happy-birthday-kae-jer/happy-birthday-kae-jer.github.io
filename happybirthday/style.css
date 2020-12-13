@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  background-color: #f2f2f2;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .column {
+  width: 12%;
+}
+
+.container .column .card_wrap {
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: transparent;
+  color: #3c3c3c;
+  width: 100%;
+  height: 200px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  margin-bottom: 50px;
+}
+
+.container .column .card_wrap .flip-card-inner {
+  position: relative;
+  text-align: center;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .column .card_wrap .flip-card-front,
+.container .column .card_wrap .flip-card-back {
+  border-radius: 5px;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+.container .column .card_wrap .flip-card-front {
+  background-color: #f2f2f2;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  height: 150px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .column .card_wrap .flip-card-front .avatar {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+
+.container .column .card_wrap .flip-card-back {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  height: initial;
+  background-color: #f2f2f2;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  line-height: 24px;
+}
+/*# sourceMappingURL=style.css.map */

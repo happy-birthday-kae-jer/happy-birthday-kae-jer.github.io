@@ -16,7 +16,17 @@ const data1 = [
     avatar: './images/eric.png',
     words: `Happy Birthday Mike! It's honestly great knowing you, you're definitely a man with good taste. Thanks for all the great cocktail, coffee, and most importantly all the good times together. Very looking forward to work with you on our spec project this upcoming year. Although we can't have a party for you due to covid, I'm sure it will happen very soon. 
 
-    I have an extremely important message for you: https://youtu.be/Xwd5DtyZQfU
+    I have an extremely important message for you: 
+
+
+    <a
+   
+    href="https://youtu.be/Xwd5DtyZQfU"
+    rel="noopener noreferrer"
+    target="_blank"
+    onclick="ga('send', 'event', {eventCategory:'Outbound Link',eventAction: 'click',eventLabel: event.target.href });"
+    >Link</a
+  >
 
     `,
   },

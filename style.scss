@@ -12,11 +12,36 @@ body {
 .link_wrap {
   width: 100%;
   height: 100%;
-  .image {
+  position: relative;
+  .background {
     width: 100%;
     height: 100%;
-    background-image: url(./Final.png);
+    background-image: url(./homepage-images/background.png);
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 0;
+    margin: 0;
+    .desktop_overlay {
+      z-index: 100;
+      padding: 0;
+      margin: 0;
+      @media screen and (max-width: 700px) {
+        display: none;
+      }
+      height: 100%;
+    }
+    .mobile_overlay {
+      padding: 0;
+      margin: 0;
+      @media screen and (max-width: 700px) {
+        display: block;
+      }
+      z-index: 100;
+      display: none;
+      height: 100%;
+    }
   }
 }
